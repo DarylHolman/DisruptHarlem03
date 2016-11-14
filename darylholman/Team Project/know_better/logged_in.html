@@ -8,8 +8,21 @@
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<style>
+		nav {
+			padding-bottom: 0px;
+			padding-top: 0px;
+			text-align: center;
+			position:absolute;
+			min-width: 100%;
+			color:white !important;
+		}
 		body {
-			background: #ff8080 !important;
+			/*background: #ff8080 !important;*/
+			background: url("images/homepage_image.jpg") no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
 		}
 		.space {
 			position: relative;
@@ -17,32 +30,97 @@
       		margin-right: 30%;
       		margin-left: 30%;
 		}
-		li {
+	.nostyle {
 			display: inline-block;
+			text-decoration: none;
+			text-align:center;
+			padding-left: 40px;
+			padding-right: 40px;
+			padding-bottom: 0px;
+			color: white !important;
 		}
+	#nostyle {
+			display: inline-block;
+			text-decoration: none;
+			text-align:center;
+			padding-left: 40px;
+			padding-right: 40px;
+			padding-bottom: 0px;
+			color: white !important;}
+
+	.navbar-inverse {
+
+			display: inline-block;
+			text-decoration: none;
+			text-align:center;
+			padding-left: 40px;
+			padding-right: 40px;
+			padding-bottom: 0px;
+			color: white !important;
+
+	}
+
 		/* Set width on the form input elements since they're 100% wide by default */
 		input,
 		select,
 		textarea {
    			 width: 500px;
+   		}
+   		footer {
+   			text-decoration: none;
+			position:absolute;
+			bottom:0px;
+			min-width: 100%;
+			display: inline-block;
+		}
 
+		nav{
+			padding-bottom: 8px;
+			padding-top: 8px;
+			text-align: center;
+			position:absolute;
+			min-width: 100%;
+			color:white !important;
+		}
+		.space {
+			display: inline-block;
+		}
+
+		.swaggy{
+			display: inline-block;
+			padding-left: 0px !important;
+			padding-right: 0px !important;
+			padding-bottom: 0px;
+
+		}
+		.jiggin {
+			display: inline-block;
+			text-decoration: none;
+			text-align:center;
+			padding-left: 0px;
+			padding-right: 0px;
+			padding-bottom: 0px;
+			color: white !important;
+			min-width: 100%;
 		}
 	</style>
 </head>
 <body>
 		
-		<nav class="navbar navbar-inverse">
-  			<li role="presentation" class="active"><a href="#">KB</a><left></li>
-  			<li role="presentation"><a href="#">Account</a><right></li>
-  			<li role="presentation"><a href="#">Log Out</a><right></li>
-  		</nav>
-  			
+		<div class="jiggin">
+			<nav class="navbar navbar-inverse">
+	  			<li role="presentation" class="active" id="nostyle"><a href="index.html">KB</a><left></li>
+	  			<li role="presentation" class="nostyle"><a href="#">Account</a><right></li>
+	  			<li role="presentation" class="nostyle"><a href="#">Log Out</a><right></li>
+	  		</nav>
+  		</div>
+  			<div class="swaggy">
   			<ul class="nav nav-pills" role="tablist">
-  				<li role="presentation"><a href="#">KB</a></li>
   				<li role="presentation"><a href="#">Profile</a></li>
   				<li role="presentation"><a href="#">Notifications <span class="badge">12</span></a></li>
   				<li role="presentation" class="active"><a href="#">Make A Post</a></li>
 			</ul>
+			</div>
 			<br>
 			<br>
 			<br>
@@ -69,6 +147,15 @@
 				<textarea class="form-control" rows="5" id="Post"></textarea>
 			</div></CENTER>
 			</div>
+	<footer>
+	<nav class="navbar-inverse">
+  		<li role="presentation" class="active" id="nostyle"><a href="#">About Us</a><left></li>
+  		<li role="presentation" class= "nostyle"><a href="#">Developers</a><right></li>
+  		<li role="presentation" class="nostyle"><a href="#">Privacy</a><right></li>
+  		<li role="presentation" class="nostyle"><a href="#">Help</a><right></li>
+  		<li role="presentation" class="nostyle"><a href="#">Contact Us</a><right></li>
+  	</nav>
+  	</footer>
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
